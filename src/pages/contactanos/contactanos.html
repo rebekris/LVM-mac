@@ -5,14 +5,43 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>Contactanos</ion-title>
+    <ion-title>
+      Contacto<ion-icon float-right name="chatbubbles" onclick="window.open('https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true', '_system', 'location=yes');"> </ion-icon> <ion-icon float-right margin-right name="call" onclick="window.open('tel:042598860')" ></ion-icon>
+    </ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
-<ion-content padding>
+<ion-content>   
+    <div #map id="map">  </div>
+  <ion-list>
+      <!--
+      <div class="imagen">
+          <img class="map" src="i../../assets/imgs/new.png" >
+      </div> -->
+            
+      <ion-item>
+        <div class="uno">
+            <h2 ion-title> Dirección </h2>
+            <p ion-text> Cdla. Bolivariana Mz. A Villa 9. <br> <br> Calle Andrés Bello y Av. del Libertador </p>
+        </div>
+        <div class="dos">
+            <h2 ion-title> Teléfono </h2>
+            <p ion-text> +593(04)2598860  +593(04)2598870 </p>
+        </div>
+        <div class="tres">
+            <h2 ion-title> Horario de atención </h2>
+            <p ion-text> 09h00 a 18h00 </p>
+        </div>
+        <div class="cuatro">
+            <h2 ion-title> E-mail </h2>
+            <p ion-text> administracion@lavozdemaria.ec </p> 
+        </div>
+      </ion-item>
+      
+  </ion-list>    
+<div class="dev" >
+<p>Desarrollado por<br><img src="i../../assets/imgs/mihttp.png" width="95px" onclick="window.open('https://mihttp.com', '_system', 'location=yes');" />
+    </p></div>
 
 </ion-content>
