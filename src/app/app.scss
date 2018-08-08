@@ -1,16 +1,59 @@
-// http://ionicframework.com/docs/theming/
+h1, h3, h4,h5{ 
+    color:#991B1A;
+    padding:1%;
+}      
+p{font-size: 14px; line-height: 24px;}
 
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+.tabbar, .toolbar-background {
+    background-image: url(../assets/imgs/bg-tabs.jpg) !important;
+    background-repeat: repeat-x !important; 
+    background-position: center bottom !important;
+    background-size: contain !important;
+    }
+
+
+.button-clear-md {
+    color:#D08E00;
+     }
+
+.toolbar-title{
+    color: white;
+}
+
+.tabs-md .tab-button {
+    color: white !important;
+    font-family: 'Roboto'!important;
+    font-size: 8px !important;
+    }
+
+.ion-ios-paper-outline:before, .ion-ios-calendar-outline:before, .ion-ios-heart-outline:before, .ion-ios-navigate-outline:before{
+    color: white;
+    }
+    
+ .container-vermas {
+    position: relative;
+    color: #D08E00;
+    text-align: center;
+}
+
+a.vermas {
+
+    position: relative;
+    padding: 10px 35px;
+    border: 1px solid #d08e00;
+    line-height: 47px;
+    margin: 0;
+    color:  #D08E00;
+    text-decoration: none;
+}
+
+.button-clear-ios {
+    border-color: transparent;
+    color: #D08E00 ;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+
+
