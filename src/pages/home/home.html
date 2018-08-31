@@ -6,15 +6,16 @@
 </ion-header>
 <ion-content>
   <img src="i../../assets/imgs/home.png">
-	<div class="radio" (click)='initRadio()' >
+	<div class="radio aportacion" onclick="window.open('https://lavozdemaria.ec/radio.html', '_system', 'location=yes');">
 		<div class="logo">  
 	    </div> 
-			<button  ion-button icon-only clear><ion-icon ios="ios-play" md="md-play"></ion-icon> Dale Play a la Radio</button>			
+			<button ion-button icon-only clear color="rmaria"><ion-icon ios="ios-play" md="md-play" color="rmaria"></ion-icon>Reproducir</button>			
 	</div>
  
         
     <h4 align="center">ÚLTIMAS NOTICIAS</h4>
-    <button ion-button outline center class="aportacion" >LEER NOTICIAS</button>
+    
+    <div class="aportacion" onclick="window.open('https://lavozdemaria.ec/noticias.php', '_system', 'location=yes');">VER NOTICIAS</div>
     <!--ion-refresher (ionRefresh)="doRefresh($event)">
     	<ion-refresher-content></ion-refresher-content>
     </ion-refresher>
@@ -37,6 +38,6 @@
    
 </ion-content>
 <ion-footer align="center">
-  <button ion-button outline (click)="gotoChat()" color="rmaria"> <ion-icon float-right name="chatbubbles" color="rmaria"> </ion-icon> </button>
+  <button ion-button outline onclick="window.open('https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true', '_system', 'location=yes');"  color="rmaria"> <ion-icon float-right name="chatbubbles" color="rmaria"> </ion-icon> </button>
   <button ion-button outline (click)="callRlvm()" color="rmaria"><ion-icon float-right name="call" color="rmaria"></ion-icon></button>
 </ion-footer>
