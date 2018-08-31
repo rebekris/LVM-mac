@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 /**
  * Generated class for the ProgramacionPage page.
@@ -15,11 +16,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ProgramacionPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private iab: InAppBrowser) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProgramacionPage');
   }
+  irProg(){
+    const browser = this.iab.create('https://lavozdemaria.ec/es/programaci%C3%B3n');
+      browser.show();
+    }
 
 }

@@ -6,12 +6,7 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>
-     Aportaciones<ion-icon float-right name="chatbubbles" onclick="window.open('https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true', '_system', 'location=yes');"> </ion-icon> <ion-icon float-right margin-right name="call" onclick="window.open('tel:042598860')" ></ion-icon>
-    </ion-title>
-     
-      
-      
+    <ion-title>Aportaciones</ion-title>    
   </ion-navbar>
 </ion-header>
 
@@ -34,3 +29,8 @@
      </div >
     
 </ion-content>
+
+<ion-footer align="center">
+    <button ion-button outline (click)="gotoChat()" color="rmaria"> <ion-icon float-right name="chatbubbles" color="rmaria"> </ion-icon> </button>
+    <button ion-button outline (click)="callRlvm()" color="rmaria"><ion-icon float-right name="call" color="rmaria"></ion-icon></button>
+</ion-footer>

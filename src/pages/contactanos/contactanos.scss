@@ -1,3 +1,72 @@
 page-contactanos {
+    .dos, .tres, .cuatro{
+        margin-top: 3%;
+    }
     
+    .uno{
+        margin-top: 6%;
+    }
+    
+    p{
+        text-align: center;
+        padding: 5%;
+        font-size: 18px;
+        
+    }
+    
+    p.formulario{
+        text-align: center;
+        padding: 5%;
+        margin-top: -5%;
+        font-size: 14px;
+        color: #343434;
+    }
+    
+    h2, h3{
+        color: black;
+        text-align: center;
+    }
+    
+    form{
+        padding: 4%;
+        margin-top: -7%;
+    }
+    
+    .tamanio{
+        font-size: 18px;
+        color: #D08E00;
+    }
+    
+    .boton a{
+         background-color: transparent;
+         border-style:solid;
+         padding: 10px;
+         border-width: thin;
+         border-color: #D08E00;
+         color: #D08E00;
+         text-decoration: none;
+         margin-left: 25px;
+         position: relative;
+         float: center;
+         left: 30%;
+         width: 40%;
+    }
+    
+    .imagen{
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    
+    #map{
+        height: 50%;
+    }
+    .dev{
+        text-align: center;
+        p{
+            padding: 0;
+            font-size: 13px;
+            margin-bottom: 0;
+            line-height: 3px;
+        }
+    }
 }

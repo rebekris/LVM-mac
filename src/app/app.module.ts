@@ -7,6 +7,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { HttpClientModule} from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { CallNumber } from '@ionic-native/call-number';
+
 
 import { MyApp } from './app.component';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -46,6 +49,8 @@ import { ConexionProvider } from '../providers/conexion/conexion';
     StatusBar,
     SplashScreen,
     SocialSharing,
+    InAppBrowser,
+    CallNumber,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ConexionProvider
   ]

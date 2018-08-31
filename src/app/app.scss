@@ -4,6 +4,7 @@ h1, h3, h4,h5{
 }      
 p{font-size: 14px; line-height: 24px;}
 
+ion-item{padding:0 !important }
 
 .tabbar, .toolbar-background {
     background-image: url(../assets/imgs/bg-tabs.jpg) !important;
@@ -11,6 +12,8 @@ p{font-size: 14px; line-height: 24px;}
     background-position: center bottom !important;
     background-size: contain !important;
     }
+
+    button{border-radius: 0 !important;}
 
 
 .button-clear-md {
@@ -57,3 +60,16 @@ a.vermas {
 
 
 
+.aportacion{
+    border: 1px solid #981719;
+    display: table;
+    vertical-align: middle;
+    padding: 10px 15px;
+    color: #981719;
+    font-weight: bold;
+    margin: 0 auto;
+    text-indent: 10px;
+    text-transform: uppercase;
+}
+
+.tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true]{color: #ffffff}

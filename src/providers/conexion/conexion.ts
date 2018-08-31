@@ -15,9 +15,10 @@ export class ConexionProvider {
 
   constructor(public http: Http) {
     console.log('Hello PruebaProvider Provider');
-    this.headers.append('x-api-key', '5BN6APZSY5X7L8XEH9S4');
+    this.headers.append('api-key', '5BN6APZSY5X7L8XEH9S4');
     this.headers.append('Content-Type', 'application/json');
     this.headers.append('Access-Control-Allow-Origin', '*');
+    this.headers.append('Access-Control-Allow-Methods', 'GET, OPTIONS');
     this.headers.append('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     //'Access-Control-Allow-Origin': '*'
     this.options = new RequestOptions({ headers: this.headers });

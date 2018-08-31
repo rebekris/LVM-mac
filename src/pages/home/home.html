@@ -1,34 +1,25 @@
 <ion-header>
   <ion-navbar>
-    <ion-title><img src="i../../assets/imgs/lavozdemaria.png"/> <ion-icon float-right name="chatbubbles" onclick="window.open('https://tawk.to/chat/5acd28c14b401e45400e84a1/default/?$_tawk_popout=true', '_system', 'location=yes');"> </ion-icon> <ion-icon float-right margin-right name="call" onclick="window.open('tel:042598860')" ></ion-icon></ion-title>     
-       <link href="home.scss">
-        <link href="home.ts">
+    <ion-title><img src="i../../assets/imgs/lavozdemaria.png"/></ion-title>     
+      
   </ion-navbar>
 </ion-header>
 <ion-content>
   <img src="i../../assets/imgs/home.png">
-	<div class="radio">
+	<div class="radio" (click)='initRadio()' >
 		<div class="logo">  
 	    </div> 
-			<table cellpadding="2" cellspacing="0" border="0" align="center" class="radio-tmp">
-				<tr>
-					<td align="center">
-						<audio id="audio_2" controls preload="none" style="width:16em;padding:0;">
-							<source src="http://72.52.144.7:8011/stream/" type='audio/mpeg'>
-						</audio>
-					</td>
-				</tr>
-			</table>
-			
+			<button  ion-button icon-only clear><ion-icon ios="ios-play" md="md-play"></ion-icon> Dale Play a la Radio</button>			
 	</div>
  
         
-    <h4 align="center"> ÚLTIMAS NOTICIAS</h4>
-    <ion-refresher (ionRefresh)="doRefresh($event)">
+    <h4 align="center">ÚLTIMAS NOTICIAS</h4>
+    <button ion-button outline center class="aportacion" >LEER NOTICIAS</button>
+    <!--ion-refresher (ionRefresh)="doRefresh($event)">
     	<ion-refresher-content></ion-refresher-content>
-  	</ion-refresher>
+    </ion-refresher>
+    
    	<ion-list>
-
 
     <ion-item *ngFor="let article of news" (click)="showNewsPage(article)" clear item-end> 
     
@@ -41,11 +32,11 @@
     <button ion-button clear item-end>Ver</button>
       
   </ion-item>
-      
-    
         
-</ion-list>
-
-
-    
+</ion-list-->
+   
 </ion-content>
+<ion-footer align="center">
+  <button ion-button outline (click)="gotoChat()" color="rmaria"> <ion-icon float-right name="chatbubbles" color="rmaria"> </ion-icon> </button>
+  <button ion-button outline (click)="callRlvm()" color="rmaria"><ion-icon float-right name="call" color="rmaria"></ion-icon></button>
+</ion-footer>
